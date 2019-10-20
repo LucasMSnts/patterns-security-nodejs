@@ -87,6 +87,17 @@ class AppointmentController {
         .status(400)
         .json({ error: 'Appointment date is not available' });
     }
+    /**
+     *  Check user is provider and do appointment
+     */
+
+    const checkisProvider = await User.findOne({
+      where: { id: req.userId, provider: true },
+    });
+
+    if (checkisProvider) {
+      return res.status(401).json({ error: 'Provider can not do appointment' });
+    }
 
     const appointment = await Appointment.create({
       user_id: req.userId,
