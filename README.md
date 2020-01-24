@@ -32,5 +32,6 @@ Quando uma aplicação Node.js cresce muito usa outras alternativas:
 # Segurança no Node.js
 
 Alguns links:
-[Express Brute](https://www.npmjs.com/package/express-brute)
-[Helmet](https://helmetjs.github.io/)
+- [Express Brute](https://www.npmjs.com/package/express-brute)
+- [Helmet](https://helmetjs.github.io/)
+- [CORS](https://expressjs.com/en/resources/middleware/cors.html)
