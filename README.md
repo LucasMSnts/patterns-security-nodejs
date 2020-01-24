@@ -25,6 +25,7 @@ Utilizando o backend do [GoBarber](https://github.com/LucasMSnts/gobarber-backen
     - Regra de negócio redundante;
 
 Patterns são úteis em projetos conforme crescem;
+
 Quando uma aplicação Node.js cresce muito usa outras alternativas:
   - Micro-serviços;
   - Serverless;
