@@ -23,6 +23,7 @@ import authMiddleware from './app/middlewares/auth';
 const routes = new Router();
 const upload = multer(multerConfig);
 
+// Express Brute (Bloquear o acesso de autenticação depois de varias tentativas)
 const bruteStore = new BruteRedis({
   host: process.env.REDIS_HOST,
   port: process.env.REDIS_PORT,
